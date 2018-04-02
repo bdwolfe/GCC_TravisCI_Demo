@@ -7,6 +7,14 @@ python:
   - "3.6"
   - "3.7-dev" # 3.7 development branch
 
+notifications:
+  email:
+    recipients:
+      - bdwolfe@gcc.edu
+    on_success: always   # default: change
+    on_failure: always  # default: always
+
+  
 # command to run tests
 script: "python simple_tests.py"
 
